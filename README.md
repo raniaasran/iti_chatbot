@@ -195,8 +195,7 @@ Cached after first download.
 #  **Example Queries**
 
 * “Tell me about Industrial Automation track”
-* “ما هي الشروط للتقديم في Post Graduates؟”
-* “آخر أخبار ITI”
+* “What are the requirements of the post graduates program”
 * “Track description for Digital IC Design”
 
 ---
@@ -207,6 +206,7 @@ Cached after first download.
 * No paid APIs used
 * Add more links in the scraper to expand dataset
 * Metadata + FAISS must match version
+* Better results were achieved when trying paid models like GPT4.
 
 ---
 
