@@ -6,7 +6,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 # 1. Load cleaned data
 try:
-    df = pd.read_csv("../data/iti_sample_clean.csv")
+    df = pd.read_csv("data/iti_sample_clean.csv")
     print(f"Clean data loaded successfully. Number of rows: {len(df)}")
 except FileNotFoundError:
     print("Error: File iti_sample_clean.csv not found. Make sure it exists.")
@@ -44,7 +44,7 @@ for index, row in df.iterrows():
 chunks_df_recursive = pd.DataFrame(all_chunks)
 
 # Save chunks to a new CSV file
-chunks_df_recursive.to_csv("../data/iti_chunks_sample.csv", index=False)
+chunks_df_recursive.to_csv("data/iti_chunks_sample.csv", index=False)
 print("✅ File iti_chunks_sample.csv saved successfully.")
 print(f"Total number of generated chunks: {len(chunks_df_recursive)}")
 

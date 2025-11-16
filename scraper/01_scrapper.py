@@ -157,5 +157,5 @@ driver.quit()
 # store data
 df = pd.DataFrame(data)
 df.drop_duplicates(subset=['url', 'content'], inplace=True)
-df.to_csv("../data/iti_full_website_data.csv", index=False)
+df.to_csv("data/iti_full_website_data.csv", index=False)
 print("Scrapping Done ")

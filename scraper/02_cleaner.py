@@ -2,7 +2,7 @@
 import pandas as pd
 import re
 
-df = pd.read_csv("../data/iti_full_website_data.csv")
+df = pd.read_csv("data/iti_full_website_data.csv")
 df.dropna(subset=["content"], inplace=True)
 
 def clean_text(text):
@@ -47,6 +47,6 @@ df = df[df["clean"].str.len() > 10]
 # 7) remove repetitions
 df.drop_duplicates(subset=["clean"], inplace=True)
 
-df.to_csv("../data/iti_sample_clean.csv", index=False)
+df.to_csv("data/iti_sample_clean.csv", index=False)
 print("after clean:", len(df))
 df.sample(10)

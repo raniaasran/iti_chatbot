@@ -48,8 +48,8 @@ def load_qwen_model(model_name: str = "Qwen/Qwen2.5-1.5B-Instruct"):
         low_cpu_mem_usage=True
     )
 
-    if device == "cpu":
-        model.to("cpu")
+    # if device == "cpu":
+    #     model.to("cpu")
 
     model.eval()
     return tokenizer, model, device

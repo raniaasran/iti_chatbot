@@ -21,10 +21,10 @@ def load_rag_components():
         model = SentenceTransformer('all-MiniLM-L6-v2', device=device) # CUDA
         
         # B. Load metadata (texts and URLs)
-        df_metadata = pd.read_pickle("../data/iti_metadata.pkl")
+        df_metadata = pd.read_pickle("data/iti_metadata.pkl")
         
         # C. Load FAISS index
-        index = faiss.read_index("../data/iti_faiss_index.bin")
+        index = faiss.read_index("data/iti_faiss_index.bin")
         
         return model, index, df_metadata
     except FileNotFoundError as e:
